@@ -13,13 +13,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoaderComponent } from './shared/components/loader/loader.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
+import { UserRegisterComponent } from './components/users/user-register/user-register.component';
 
 // Others
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import {LoaderService} from "./services/loader.service";
 import { TokenInterceptor } from "./shared/interceptors/token.interceptor";
-import {DashboardModule} from "./components/dashboard/dashboard.module";
+import { ConferenceRegisterComponent } from './components/conferences/conference-register/conference-register.component';
 
 
 @NgModule({
@@ -29,7 +29,8 @@ import {DashboardModule} from "./components/dashboard/dashboard.module";
     FooterComponent,
     LoaderComponent,
     LoginComponent,
-    RegisterComponent
+    UserRegisterComponent,
+    ConferenceRegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +39,6 @@ import {DashboardModule} from "./components/dashboard/dashboard.module";
     QRCodeModule,
     RouterModule,
     HttpClientModule,
-    DashboardModule
   ],
   providers: [
     {
